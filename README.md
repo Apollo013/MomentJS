@@ -12,6 +12,7 @@ A simple ASP.NET / AngularJS app that demonstrates the use of MomentJS when form
 ###MomentJS Features###
 * Simple Date Formatting
 * Relative & Calendar Times
+* Humanized Times
 * Locale Dates & Times
 * Twitter Times
 * Date Validation

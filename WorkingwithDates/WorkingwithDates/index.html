@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Demonstrating of date manipulation using MomentJS">
+    <meta name="author" content="Paul James Millar">
+    <title>MomentJS Demo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="bootstrap/css/simple-sidebar.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#/dateformats">MomentJS</a>
+                </li>
+                <li>
+                    <a href="#/dateformats">Date Formats</a>
+                </li>
+                <li>
+                    <a href="#/relativetimes">Relative Times</a>
+                </li>
+                <li>
+                    <a href="#/calendartimes">Calendar Times</a>
+                </li>
+                <li>
+                    <a href="#/localetimes">Locale Dates</a>
+                </li>
+                <li>
+                    <a href="#/validatedates">Date Validation</a>
+                </li>
+                <li>
+                    <a href="#/humanize">Humanized Times</a>
+                </li>
+                <li>
+                    <a href="#/twitter">Twitter Times Plugin</a>
+                </li>   
+                <li>
+                    <a href="#/preciserange">Precise Range Plugin</a>
+                </li>                              
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12" style="background-color:cadetblue; color:white;">
+                        <h3 ng-bind="Title"></h3>
+                    </div>
+                </div>
+                <div ng-view></div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="bootstrap/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- MomentJS -->
+    <script src="scripts/moment-with-locales.js"></script>
+    <script src="scripts/moment-twitter.js"></script>
+    <script src="scripts/moment-range.js"></script>
+
+    <!-- AngularJS -->
+    <script src="angularjs/angular.min.js"></script>
+    <script src="angularjs/angular-route.min.js"></script>
+    <script src="app/app.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+</body>
+</html>

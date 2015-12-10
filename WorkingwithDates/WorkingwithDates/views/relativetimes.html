@@ -1,0 +1,30 @@
+﻿<table class="table">
+    <thead>
+        <tr>
+            <th>Format</th>
+            <th>Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>moment('20111031', 'YYYYMMDD').fromNow()</td>
+            <td>{{momentRel1}}</td>
+        </tr>
+        <tr>
+            <td>moment('20120621', 'YYYYMMDD').fromNow()</td>
+            <td>{{momentRel2}}</td>
+        </tr>
+        <tr>
+            <td>moment().startOf('day').fromNow()</td>
+            <td>{{momentRel3}}</td>
+        </tr>
+        <tr>
+            <td>moment().startOf('hour').fromNow()</td>
+            <td>{{momentRel4}}</td>
+        </tr>
+        <tr>
+            <td>moment().endOf('hour').fromNow()</td>
+            <td>{{momentRel5}}</td>
+        </tr>
+    </tbody>
+</table>

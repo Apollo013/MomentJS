@@ -1,6 +1,8 @@
 # MomentJS
 A simple ASP.NET / AngularJS app that demonstrates the use of MomentJS when formatting dates. 
 
+####Hosted on Azure - http://momentjs.azurewebsites.net/#/dateformats
+
 ###Technologies###
 * ASP.NET
 * AngularJS

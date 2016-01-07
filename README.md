@@ -4,6 +4,7 @@ A simple ASP.NET / AngularJS app that demonstrates the use of MomentJS when form
 ####Hosted on Azure - http://momentjs.azurewebsites.net/#/dateformats
 
 ###Technologies###
+* VS2015
 * ASP.NET
 * AngularJS
 * MomentJS
